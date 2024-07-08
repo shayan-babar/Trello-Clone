@@ -10,44 +10,87 @@ body {
 }
 
 header {
-    background-color: #333333;
-    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: rgb(139, 204, 218);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 50px;
 }
 
+#date {
+
+    color: rgb(139, 204, 218);
+}
+
+#time {
+    color:rgb(139, 204, 218);
+}
+
 main {
     display: flex;
+    align-items: start;
     gap: 10px;
     overflow-x: auto;
     padding: 20px;
 }
 
 .column {
-    border: 2px solid#333333;
+    border: 2px solid rgb(79, 99, 103);
+    ;
     min-height: 300px;
     min-width: 300px;
+    border-radius: 12px;
     padding: 15px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .column>h3 {
+    color: rgb(139, 204, 218);
     font-size: 24px;
     text-align: center;
 }
 
 .column>p {
     padding: 8px;
-    background-color: antiquewhite;
+    background-color: #ffffff;
     text-align: center;
 }
 
 .column>form>input {
     padding: 10px;
     width: 100%;
+}
+
+
+button {
+    padding: 7px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    background-color: rgb(238, 245, 219);
+    border-radius: 15px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 10px;
+    color: rgb(139, 204, 218);
+}
+
+.footer-content a:hover {
+    text-decoration: underline #ffffff;
 }
